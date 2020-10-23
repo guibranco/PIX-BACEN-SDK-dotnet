@@ -12,7 +12,7 @@
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>pix bacen </PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/guibranco/PIX-BACEN-SDK-DotNet/master/logoPackage.png</PackageIconUrl>
-    <PackageIcon>logo.png</PackageIcon>
+    <PackageIcon>logoPackage.png</PackageIcon>
     <Version>1.0.0</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>

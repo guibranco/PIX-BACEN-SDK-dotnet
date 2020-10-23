@@ -19,20 +19,20 @@ SDK for .NET of the PIX contracts available at: https://github.com/bacen/pix-api
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/codacyid)](https://www.codacy.com/manual/changeme/codacyid)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/codacyid)](https://www.codacy.com/manual/changeme/codacyid)
-[![Codecov](https://codecov.io/gh/USER/REPO/branch/master/graph/badge.svg)](https://codecov.io/gh/USER/REPO)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=alert_status)](https://sonarcloud.io/dashboard?id=USER_REPO)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=coverage)](https://sonarcloud.io/dashboard?id=USER_REPO)
+[![Codecov](https://codecov.io/gh/guibranco/PIX-BACEN-SDK-DotNet/branch/master/graph/badge.svg)](https://codecov.io/gh/guibranco/PIX-BACEN-SDK-DotNet)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=alert_status)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=coverage)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
 
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=USER_REPO)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=ncloc)](https://sonarcloud.io/dashboard?id=USER_REPO)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=sqale_index)](https://sonarcloud.io/dashboard?id=USER_REPO)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=USER_REPO)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=ncloc)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=sqale_index)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
 
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=USER_REPO)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=security_rating)](https://sonarcloud.io/dashboard?id=USER_REPO)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=code_smells)](https://sonarcloud.io/dashboard?id=USER_REPO)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=bugs)](https://sonarcloud.io/dashboard?id=USER_REPO)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=USER_REPO&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=USER_REPO)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=security_rating)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=code_smells)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=bugs)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
 
 ---
 

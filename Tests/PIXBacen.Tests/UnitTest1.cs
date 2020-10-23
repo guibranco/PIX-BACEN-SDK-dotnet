@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace SolutionName.Tests
+namespace PIXBacen.Tests
 {
     public class UnitTest1
     {

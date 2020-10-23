@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <ProjectGuid>{e59f9a57-a1ca-48bc-bb8d-444411a385b0}</ProjectGuid>
+    <ProjectGuid>{75E35E03-D43A-4369-9284-28BB1FEEFDBF}</ProjectGuid>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Guilherme Branco Stracini</Authors>
-    <Copyright>Â© 2020 Guilherme Branco Stracini. All rights reserved.</Copyright>
+    <Copyright>© 2020 Guilherme Branco Stracini. All rights reserved.</Copyright>
     <Description>The PIX (BACEN) contracts for .NET API clients wrappers</Description>
     <PackageProjectUrl>https://github.com/guibranco/PIX-BACEN-SDK-DotNet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/guibranco/PIX-BACEN-SDK-DotNet</RepositoryUrl>

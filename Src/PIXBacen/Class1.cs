@@ -1,4 +1,4 @@
-namespace SolutionName
+﻿namespace PIXBacen
 {
     public class Class1
     {

@@ -7,7 +7,10 @@ namespace PIXBacen.Tests
         [Fact]
         public void Test1()
         {
-            Assert.True(true);
+            var c = new Class1();
+            var r = c.Method();
+
+            Assert.True(r);
         }
     }
 }

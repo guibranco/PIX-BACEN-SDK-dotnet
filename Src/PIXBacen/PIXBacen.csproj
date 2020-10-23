@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <ProjectGuid>607C5F01-7464-496C-A4E7-9DA6FE35234E</ProjectGuid>
+    <ProjectGuid>{e59f9a57-a1ca-48bc-bb8d-444411a385b0}</ProjectGuid>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Guilherme Branco Stracini</Authors>

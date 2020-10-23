@@ -6,8 +6,9 @@ skip_commits:
   message: /(Create|Update) .*\.(png|jpg|jpeg|bmp|gif|md)/
 
 environment:
+  SOLUTION_NAME: PIXBacen
   SONAR_TOKEN: 
-    secure: xLias5AyRmfrqKEmZIn9+wbX1ynwrdfkQJFNrLb0RWIdYPuVQgvrfCFHNgu5bqfw
+    secure: RYo5TAZQp6MdgKZDR1RX1OfElOkNWw8srVOWxKakDbqhXri7aY7GU38P8v4Dp1j5
   GITHUB_TOKEN:
     secure: VgYYJdvNLy/n9/uxxlaF0bMpIIrVxCb+dGr66U9nWfPWSN2ySdfuilO8klAw0uvF
   CODACY_PROJECT_TOKEN:
@@ -23,7 +24,6 @@ dotnet_csproj:
   informational_version: '{version}' 
 
 before_build:
-- ps: $env:SOLUTION_NAME = "$env:APPVEYOR_REPO_NAME" -replace ".*/","" -replace "-SDK-dotnet","" -replace "-dotnet",""
 - ps: $env:SONAR_PROJECT = "$env:APPVEYOR_REPO_NAME" -replace "/","_"
 - ps: $env:SONAR_ORGANIZATION = "$env:APPVEYOR_REPO_NAME" -replace "/.*$","-github"
 - cmd: nuget restore

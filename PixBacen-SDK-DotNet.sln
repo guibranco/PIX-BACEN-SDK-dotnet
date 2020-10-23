@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{ae11fb58-8469-404f-8dda-9278910b503d}") = "Src", "Src", "{75b14a5c-47b5-478b-8214-eaf89d1347b9}"
+EndProject
+Project("{ae11fb58-8469-404f-8dda-9278910b503d}") = "Tests", "Tests", "{60e09d12-7acc-401e-abd8-f146951d3b01}"
+EndProject
+Project("{295d9ba5-0a5c-4e83-869e-a27fc6d7d9d7}") = "PIXBacen", "Src\PIXBacen\PIXBacen.csproj", "{e59f9a57-a1ca-48bc-bb8d-444411a385b0}"
+EndProject
+Project("{295d9ba5-0a5c-4e83-869e-a27fc6d7d9d7}") = "PIXBacen.Tests", "Tests\PIXBacen.Tests\PIXBacen.Tests.csproj", "{b4548adc-a4af-4ea0-b45a-42f2c37d95d1}"
+EndProject
+Project("{ae11fb58-8469-404f-8dda-9278910b503d}") = "Solution Items", "Solution Items", "{7029F144-374E-4943-B530-B3D603991881}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{e59f9a57-a1ca-48bc-bb8d-444411a385b0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e59f9a57-a1ca-48bc-bb8d-444411a385b0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e59f9a57-a1ca-48bc-bb8d-444411a385b0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{e59f9a57-a1ca-48bc-bb8d-444411a385b0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{b4548adc-a4af-4ea0-b45a-42f2c37d95d1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b4548adc-a4af-4ea0-b45a-42f2c37d95d1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b4548adc-a4af-4ea0-b45a-42f2c37d95d1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{b4548adc-a4af-4ea0-b45a-42f2c37d95d1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{e59f9a57-a1ca-48bc-bb8d-444411a385b0} = {75b14a5c-47b5-478b-8214-eaf89d1347b9}
+		{b4548adc-a4af-4ea0-b45a-42f2c37d95d1} = {60e09d12-7acc-401e-abd8-f146951d3b01}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {e847ebd3-e0d3-49a2-b18b-1132119bdc71}
+	EndGlobalSection
+EndGlobal

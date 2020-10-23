@@ -7,11 +7,11 @@ skip_commits:
 
 environment:
   SONAR_TOKEN: 
-    secure: <secure token from Sonar Cloud>
+    secure: xLias5AyRmfrqKEmZIn9+wbX1ynwrdfkQJFNrLb0RWIdYPuVQgvrfCFHNgu5bqfw
   GITHUB_TOKEN:
-    secure: <secure token from Github>
+    secure: VgYYJdvNLy/n9/uxxlaF0bMpIIrVxCb+dGr66U9nWfPWSN2ySdfuilO8klAw0uvF
   CODACY_PROJECT_TOKEN:
-    secure: <secure token from Codacy>
+    secure: OTuCYXcGOH+xLcFFvPK9b0s1/vaDER5vKECPBk57azM+k9DQPcjKB7N70Wbsvfgm
 
 dotnet_csproj: 
   patch: true 
@@ -65,7 +65,7 @@ build_script:
  /d:sonar.login="$env:SONAR_TOKEN" }'
 
 after_build:
-- xcopy %CD%\Src\%SOLUTION_NAME%\bin\Release\netstandard2.1\*.* %CD%\Build\
+- xcopy %CD%\Src\%SOLUTION_NAME%\bin\Release\netstandard2.0\*.* %CD%\Build\
 - copy %CD%\Src\%SOLUTION_NAME%\bin\Release\%SOLUTION_NAME%.%APPVEYOR_BUILD_VERSION%.nupkg %SOLUTION_NAME%.%APPVEYOR_BUILD_VERSION%.nupkg
 - rd /s /q %CD%\Src\%SOLUTION_NAME%\bin\Release\
 - xcopy %CD%\Tests\%SOLUTION_NAME%.Tests\*.xml %CD%\Coverage\

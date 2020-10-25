@@ -1,6 +1,8 @@
 # PIX (BACEN) .NET SDK
 
-SDK for .NET of the PIX contracts available at: https://github.com/bacen/pix-api/
+Brasilian instantly payments (PIX) powered by BACEN (Banco Central do Brasil) contracts ready to use for .NET projects.
+
+PIX contracts available at: https://github.com/bacen/pix-api/ and https://github.com/bacen/pix-dict-api
 
 [![GitHub license](https://img.shields.io/github/license/guibranco/PIX-BACEN-SDK-DotNet)](https://github.com/guibranco/PIX-BACEN-SDK-DotNet)
 [![time tracker](https://wakatime.com/badge/github/guibranco/PIX-BACEN-SDK-DotNet.svg)](https://wakatime.com/badge/github/guibranco/PIX-BACEN-SDK-DotNet)
@@ -52,28 +54,4 @@ NuGet installation via *Package Manager Console*:
 Install-Package PIXBacen
 
 ```
-
----
-
-## Features
-
-Implements all features of Project name API available at [Project name](https://project.name.com/)
-
-- Feature #1
-- Feature #2
-- Feature #3
-- Feature #N
-
----
-
-## Usage
-
-```cs
-
-//sample CSharp code showing how to use the lib
-var client = new PackageNameClient();
-client.CallSomeMethod();
-
-```
-
 ---

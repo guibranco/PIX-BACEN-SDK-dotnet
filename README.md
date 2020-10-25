@@ -16,9 +16,8 @@ SDK for .NET of the PIX contracts available at: https://github.com/bacen/pix-api
 
 
 ## Code Quality
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/codacyid)](https://www.codacy.com/manual/changeme/codacyid)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/codacyid)](https://www.codacy.com/manual/changeme/codacyid)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/fb3b0b3876fb4e85a33ba9c891bfa3b3)](https://www.codacy.com/gh/guibranco/PIX-BACEN-SDK-DotNet/dashboard)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/fb3b0b3876fb4e85a33ba9c891bfa3b3)](https://www.codacy.com/gh/guibranco/PIX-BACEN-SDK-DotNet/dashboard)
 [![Codecov](https://codecov.io/gh/guibranco/PIX-BACEN-SDK-DotNet/branch/master/graph/badge.svg)](https://codecov.io/gh/guibranco/PIX-BACEN-SDK-DotNet)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=alert_status)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=coverage)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)

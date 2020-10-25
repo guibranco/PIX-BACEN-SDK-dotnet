@@ -1,4 +1,4 @@
-# PIX (BACEN) SDK
+# PIX (BACEN) .NET SDK
 
 SDK for .NET of the PIX contracts available at: https://github.com/bacen/pix-api/
 

@@ -2,7 +2,7 @@
 
 Brasilian instantly payments (PIX) powered by BACEN (Banco Central do Brasil) contracts ready to use for .NET projects.
 
-PIX contracts available at: https://github.com/bacen/pix-api/ and https://github.com/bacen/pix-dict-api
+PIX contracts available at: [bacen/pix-api](https://github.com/bacen/pix-api/) and [bacen/pix-dict-api](https://github.com/bacen/pix-dict-api)
 
 [![GitHub license](https://img.shields.io/github/license/guibranco/PIX-BACEN-SDK-DotNet)](https://github.com/guibranco/PIX-BACEN-SDK-DotNet)
 [![time tracker](https://wakatime.com/badge/github/guibranco/PIX-BACEN-SDK-DotNet.svg)](https://wakatime.com/badge/github/guibranco/PIX-BACEN-SDK-DotNet)

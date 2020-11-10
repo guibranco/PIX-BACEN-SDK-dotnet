@@ -19,6 +19,31 @@ namespace PIXBacen
             throw new NotImplementedException();
         }
 
+        public ValueTask<CobrancaPayload> PutChargeAsync(string txId, CobrancaPayload charge, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValueTask<CobrancaPayload> PatchChargeAsync(string txId, CobrancaPayload charge, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValueTask<CobrancaPayload> GetChargeAsync(string txtId, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValueTask<CobrancaPayload> PostChargeAsync(CobrancaPayload charge, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ValueTask<CobrancaPayloadList> GetChargesAsync(ChargeFilter filters, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
     }
 }

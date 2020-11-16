@@ -8,6 +8,8 @@
 
         public Juros Juros { get; set; }
 
+        public Desconto Desconto { get; set; }
+
         public decimal Final { get; set; }
 
     }

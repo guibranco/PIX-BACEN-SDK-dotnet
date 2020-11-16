@@ -5,7 +5,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Guilherme Branco Stracini</Authors>
-    <Copyright>© 2020 Guilherme Branco Stracini. All rights reserved.</Copyright>
+    <Copyright>ï¿½ 2020 Guilherme Branco Stracini. All rights reserved.</Copyright>
     <Description>The PIX (BACEN) contracts for .NET API clients wrappers</Description>
     <PackageProjectUrl>https://github.com/guibranco/PIX-BACEN-SDK-DotNet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/guibranco/PIX-BACEN-SDK-DotNet</RepositoryUrl>
@@ -21,10 +21,11 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="../../LICENSE" Pack="true" PackagePath="\"/>
-    <None Include="../../logoPackage.png" Pack="true" PackagePath="\"/>
+    <None Include="../../LICENSE" Pack="true" PackagePath="\" />
+    <None Include="../../logoPackage.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>

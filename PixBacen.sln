@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D55D040E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PIXBacen", "Src\PIXBacen\PIXBacen.csproj", "{75E35E03-D43A-4369-9284-28BB1FEEFDBF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PIXBacen.Tests", "Tests\PixBacen.Tests\PIXBacen.Tests.csproj", "{2F57B9CD-5505-4456-B9FE-F91DCB4476D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,12 +29,17 @@ Global
 		{75E35E03-D43A-4369-9284-28BB1FEEFDBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75E35E03-D43A-4369-9284-28BB1FEEFDBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75E35E03-D43A-4369-9284-28BB1FEEFDBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F57B9CD-5505-4456-B9FE-F91DCB4476D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F57B9CD-5505-4456-B9FE-F91DCB4476D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F57B9CD-5505-4456-B9FE-F91DCB4476D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F57B9CD-5505-4456-B9FE-F91DCB4476D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{75E35E03-D43A-4369-9284-28BB1FEEFDBF} = {97E47EF8-CECE-443E-85A6-D2B8A1AD9EFB}
+		{2F57B9CD-5505-4456-B9FE-F91DCB4476D6} = {D55D040E-8FD7-49A6-B871-5D6C9F0E36E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E859354-91E0-4264-A7A9-885B1EB99E5C}

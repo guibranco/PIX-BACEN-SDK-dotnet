@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace PIXBacen
+﻿namespace PIXBacen
 {
+    using System;
+
     public class ChargeFilter
     {
         public DateTime Inicio { get; set; }

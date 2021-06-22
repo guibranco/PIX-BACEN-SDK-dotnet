@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace PIXBacen
+﻿namespace PIXBacen
 {
+    using System;
+
     public class Pix
     {
         public string EndToEndId { get; set; }

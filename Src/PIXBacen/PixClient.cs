@@ -1,9 +1,9 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace PIXBacen
+﻿namespace PIXBacen
 {
+    using System;
+    using System.Threading;
+    using System.Threading.Tasks;
+
     public class PixClient : IPixClient
     {
         #region Implementation of IPixClient

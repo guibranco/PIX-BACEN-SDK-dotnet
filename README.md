@@ -7,20 +7,20 @@ PIX contracts available at: [bacen/pix-api](https://github.com/bacen/pix-api/) a
 [![GitHub license](https://img.shields.io/github/license/guibranco/PIX-BACEN-SDK-DotNet)](https://github.com/guibranco/PIX-BACEN-SDK-DotNet)
 [![time tracker](https://wakatime.com/badge/github/guibranco/PIX-BACEN-SDK-DotNet.svg)](https://wakatime.com/badge/github/guibranco/PIX-BACEN-SDK-DotNet)
 
-![PIX (BACEN)](https://raw.githubusercontent.com/guibranco/PIX-BACEN-SDK-DotNet/master/logo.png)
+![PIX (BACEN)](https://raw.githubusercontent.com/guibranco/PIX-BACEN-SDK-DotNet/main/logo.png)
 
 ## CI/CD
 
 | Branch | Build status | Last commit | Tests |
 |--------|--------------|-------------|-------|
-| Master | [![Build status](https://ci.appveyor.com/api/projects/status/epfv828r93depgv7/branch/master?svg=true)](https://ci.appveyor.com/project/guibranco/PIX-BACEN-SDK-DotNet/branch/master) | [![GitHub last commit](https://img.shields.io/github/last-commit/guibranco/PIX-BACEN-SDK-DotNet/master)](https://github.com/guibranco/PIX-BACEN-SDK-DotNet) | ![AppVeyor tests (branch)](https://img.shields.io/appveyor/tests/guibranco/PIX-BACEN-SDK-DotNet/master?compact_message) |
+| Main | [![Build status](https://ci.appveyor.com/api/projects/status/epfv828r93depgv7/branch/main?svg=true)](https://ci.appveyor.com/project/guibranco/PIX-BACEN-SDK-DotNet/branch/main) | [![GitHub last commit](https://img.shields.io/github/last-commit/guibranco/PIX-BACEN-SDK-DotNet/main)](https://github.com/guibranco/PIX-BACEN-SDK-DotNet) | ![AppVeyor tests (branch)](https://img.shields.io/appveyor/tests/guibranco/PIX-BACEN-SDK-DotNet/main?compact_message) |
 | Develop | [![Build status](https://ci.appveyor.com/api/projects/status/epfv828r93depgv7/branch/develop?svg=true)](https://ci.appveyor.com/project/guibranco/PIX-BACEN-SDK-DotNet/branch/develop) | [![GitHub last commit](https://img.shields.io/github/last-commit/guibranco/PIX-BACEN-SDK-DotNet/develop)](https://github.com/guibranco/PIX-BACEN-SDK-DotNet) | ![AppVeyor tests (branch)](https://img.shields.io/appveyor/tests/guibranco/PIX-BACEN-SDK-DotNet/develop?compact_message) |
 
 
 ## Code Quality
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/fb3b0b3876fb4e85a33ba9c891bfa3b3)](https://www.codacy.com/gh/guibranco/PIX-BACEN-SDK-DotNet/dashboard)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/fb3b0b3876fb4e85a33ba9c891bfa3b3)](https://www.codacy.com/gh/guibranco/PIX-BACEN-SDK-DotNet/dashboard)
-[![Codecov](https://codecov.io/gh/guibranco/PIX-BACEN-SDK-DotNet/branch/master/graph/badge.svg)](https://codecov.io/gh/guibranco/PIX-BACEN-SDK-DotNet)
+[![Codecov](https://codecov.io/gh/guibranco/PIX-BACEN-SDK-DotNet/branch/main/graph/badge.svg)](https://codecov.io/gh/guibranco/PIX-BACEN-SDK-DotNet)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=alert_status)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=guibranco_PIX-BACEN-SDK-DotNet&metric=coverage)](https://sonarcloud.io/dashboard?id=guibranco_PIX-BACEN-SDK-DotNet)
 

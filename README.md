@@ -14,7 +14,6 @@ PIX contracts available at: [bacen/pix-api](https://github.com/bacen/pix-api/) a
 | Branch | Build status | Last commit | Tests |
 |--------|--------------|-------------|-------|
 | Main | [![Build status](https://ci.appveyor.com/api/projects/status/epfv828r93depgv7/branch/main?svg=true)](https://ci.appveyor.com/project/guibranco/PIX-BACEN-SDK-DotNet/branch/main) | [![GitHub last commit](https://img.shields.io/github/last-commit/guibranco/PIX-BACEN-SDK-DotNet/main)](https://github.com/guibranco/PIX-BACEN-SDK-DotNet) | ![AppVeyor tests (branch)](https://img.shields.io/appveyor/tests/guibranco/PIX-BACEN-SDK-DotNet/main?compact_message) |
-| Develop | [![Build status](https://ci.appveyor.com/api/projects/status/epfv828r93depgv7/branch/develop?svg=true)](https://ci.appveyor.com/project/guibranco/PIX-BACEN-SDK-DotNet/branch/develop) | [![GitHub last commit](https://img.shields.io/github/last-commit/guibranco/PIX-BACEN-SDK-DotNet/develop)](https://github.com/guibranco/PIX-BACEN-SDK-DotNet) | ![AppVeyor tests (branch)](https://img.shields.io/appveyor/tests/guibranco/PIX-BACEN-SDK-DotNet/develop?compact_message) |
 
 
 ## Code Quality

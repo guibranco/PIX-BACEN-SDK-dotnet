@@ -10,7 +10,7 @@ environment:
   SONAR_TOKEN: 
     secure: RYo5TAZQp6MdgKZDR1RX1OfElOkNWw8srVOWxKakDbqhXri7aY7GU38P8v4Dp1j5
   GITHUB_TOKEN:
-    secure: D1z81FqZlvGkCEyDzJ3g6sIJ93ecUE9EuqfUxc4CMiFGW139pWZk+/huuTY5jzG
+    secure: AD1z81FqZlvGkCEyDzJ3g6sIJ93ecUE9EuqfUxc4CMiFGW139pWZk+/huuTY5jzG
   CODACY_PROJECT_TOKEN:
     secure: bqp3Vwf5Ft5sm/p8WP1AwuSu8msKg1sRYqH28kx2mK39mEN9L15BWl2wKHAUlNKd
 
@@ -34,7 +34,7 @@ before_build:
 - cmd: nuget restore
 - cmd: choco install opencover.portable
 - cmd: choco install codecov
-- cmd: curl -L https://github.com/codacy/codacy-coverage-reporter/releases/download/12.2.0/codacy-coverage-reporter-assembly.jar > ./codacy-test-reporter.jar
+- cmd: curl -L https://github.com/codacy/codacy-coverage-reporter/releases/download/13.11.170/codacy-coverage-reporter-assembly.jar > ./codacy-test-reporter.jar
 - cmd: dotnet tool install --global dotnet-sonarscanner
 
 build:
@@ -93,6 +93,7 @@ deploy:
   on:
    branch: main
   artifact: Package
+  
 - provider: GitHub
   on:
    branch: main

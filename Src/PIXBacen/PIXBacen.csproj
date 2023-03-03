@@ -10,7 +10,7 @@
     <Copyright>© 2023 Guilherme Branco Stracini. All rights reserved.</Copyright>
     <Description>The PIX (BACEN) contracts for .NET API clients wrappers</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/guibranco/PIX-BACEN-SDK-DotNet</PackageProjectUrl>
+    <PackageProjectUrl>https://guibranco.github.io/PIX-BACEN-SDK-DotNet/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/guibranco/PIX-BACEN-SDK-DotNet</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
     <PackageTags>pix bacen </PackageTags>

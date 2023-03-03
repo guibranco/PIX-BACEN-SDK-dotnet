@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
 title: PIX (BACEN) .NET
 description: A .NET implementation of PIX contracts available at https://github.com/bacen/pix-api/
-logo: https://raw.githubusercontent.com/guibranco/PIX-BACEN-SDK-DotNet/master/logo.png
+logo: https://raw.githubusercontent.com/guibranco/PIX-BACEN-SDK-DotNet/main/logo.png
 show_downloads: true

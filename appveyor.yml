@@ -11,6 +11,8 @@ environment:
     secure: AD1z81FqZlvGkCEyDzJ3g6sIJ93ecUE9EuqfUxc4CMiFGW139pWZk+/huuTY5jzG
   CODACY_PROJECT_TOKEN:
     secure: bqp3Vwf5Ft5sm/p8WP1AwuSu8msKg1sRYqH28kx2mK39mEN9L15BWl2wKHAUlNKd
+  CODECLIMATE_TOKEN:
+    secure: w2RdqAp3D471W/s2qVXBww3qWIBrzVQPgAaWJHqrnE4FtRB5GGPLGhzr+Pxb3UHIjZnIIndbSZwOTKJQJe8FVVcfrYfLW7HErhqwvZW+Wcg=
 
 dotnet_csproj:
   patch: true

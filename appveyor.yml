@@ -50,6 +50,7 @@ build_script:
 - ps: $Params += "/d:sonar.cs.opencover.reportsPaths=`"$env:CD\Tests\$env:SOLUTION_NAME.Tests\coverage.opencover.xml`""
 - ps: if(-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { $Params += "/d:sonar.branch.name=`"$env:APPVEYOR_REPO_BRANCH`"" }
 - ps: if($env:APPVEYOR_PULL_REQUEST_NUMBER) { $Params += "/d:sonar.pullrequest.key=$env:APPVEYOR_PULL_REQUEST_NUMBER" }
+- ps: echo $Params
 - ps: Start-process "dotnet" "sonarscanner begin $($Params -join ' ')"
 - codeclimate-test-reporter before-build
 - dotnet build %SOLUTION_NAME%.sln

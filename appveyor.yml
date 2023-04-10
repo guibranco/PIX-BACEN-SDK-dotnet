@@ -6,13 +6,13 @@ configuration: Release
 environment:
   SOLUTION_NAME: PIXBacen
   SONAR_TOKEN: 
-   secure: RYo5TAZQp6MdgKZDR1RX1OfElOkNWw8srVOWxKakDbqhXri7aY7GU38P8v4Dp1j5
+    secure: RYo5TAZQp6MdgKZDR1RX1OfElOkNWw8srVOWxKakDbqhXri7aY7GU38P8v4Dp1j5
   GITHUB_TOKEN:
-   secure: AD1z81FqZlvGkCEyDzJ3g6sIJ93ecUE9EuqfUxc4CMiFGW139pWZk+/huuTY5jzG
+    secure: AD1z81FqZlvGkCEyDzJ3g6sIJ93ecUE9EuqfUxc4CMiFGW139pWZk+/huuTY5jzG
   CODACY_PROJECT_TOKEN:
-   secure: bqp3Vwf5Ft5sm/p8WP1AwuSu8msKg1sRYqH28kx2mK39mEN9L15BWl2wKHAUlNKd
+    secure: bqp3Vwf5Ft5sm/p8WP1AwuSu8msKg1sRYqH28kx2mK39mEN9L15BWl2wKHAUlNKd
   CODECLIMATE_TOKEN:
-   secure: w2RdqAp3D471W/s2qVXBww3qWIBrzVQPgAaWJHqrnE4FtRB5GGPLGhzr+Pxb3UHIjZnIIndbSZwOTKJQJe8FVVcfrYfLW7HErhqwvZW+Wcg=
+    secure: w2RdqAp3D471W/s2qVXBww3qWIBrzVQPgAaWJHqrnE4FtRB5GGPLGhzr+Pxb3UHIjZnIIndbSZwOTKJQJe8FVVcfrYfLW7HErhqwvZW+Wcg=
 
 dotnet_csproj:
   patch: true
@@ -50,7 +50,6 @@ build_script:
 - ps: $Params += "/d:sonar.cs.opencover.reportsPaths=`"$env:CD\Tests\$env:SOLUTION_NAME.Tests\coverage.opencover.xml`""
 - ps: if(-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { $Params += "/d:sonar.branch.name=`"$env:APPVEYOR_REPO_BRANCH`"" }
 - ps: if($env:APPVEYOR_PULL_REQUEST_NUMBER) { $Params += "/d:sonar.pullrequest.key=$env:APPVEYOR_PULL_REQUEST_NUMBER" }
-- ps: echo $Params
 - ps: Start-process "dotnet" "sonarscanner begin $($Params -join ' ')"
 - codeclimate-test-reporter before-build
 - dotnet build %SOLUTION_NAME%.sln

@@ -1,4 +1,4 @@
-version: 1.0.{build}
+version: 1.1.{build}
 skip_tags: true
 image: Visual Studio 2022
 configuration: Release
@@ -11,15 +11,17 @@ environment:
     secure: AD1z81FqZlvGkCEyDzJ3g6sIJ93ecUE9EuqfUxc4CMiFGW139pWZk+/huuTY5jzG
   CODACY_PROJECT_TOKEN:
     secure: bqp3Vwf5Ft5sm/p8WP1AwuSu8msKg1sRYqH28kx2mK39mEN9L15BWl2wKHAUlNKd
+  CODECLIMATE_TOKEN:
+    secure: w2RdqAp3D471W/s2qVXBww3qWIBrzVQPgAaWJHqrnE4FtRB5GGPLGhzr+Pxb3UHIjZnIIndbSZwOTKJQJe8FVVcfrYfLW7HErhqwvZW+Wcg=
 
-dotnet_csproj: 
-  patch: true 
-  file: '**\*.csproj' 
-  version: '{version}' 
-  package_version: '{version}' 
-  assembly_version: '{version}' 
-  file_version: '{version}' 
-  informational_version: '{version}' 
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
     
 init:
 - SET JAVA_HOME=C:\Program Files\Java\jdk19
@@ -32,6 +34,7 @@ before_build:
 - cmd: choco install opencover.portable
 - cmd: choco install codecov
 - cmd: curl -L https://github.com/codacy/codacy-coverage-reporter/releases/latest/download/codacy-coverage-reporter-assembly.jar > ./codacy-test-reporter.jar
+- cmd: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-windows-amd64 > codeclimate-test-reporter.exe
 - cmd: dotnet tool install --global dotnet-sonarscanner
 
 build:
@@ -41,45 +44,27 @@ build:
   verbosity: normal
 
 build_script:
-- ps: 'if (-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { &
-        dotnet sonarscanner begin 
-         /k:"$env:SONAR_PROJECT" 
-         /o:"$env:SONAR_ORGANIZATION" 
-         /d:sonar.branch.name="$env:APPVEYOR_REPO_BRANCH"
-         /d:sonar.host.url="https://sonarcloud.io" 
-         /d:sonar.login="$env:SONAR_TOKEN" 
-         /v:"$env:APPVEYOR_BUILD_NUMBER" 
-         /d:sonar.exclusions="**/bin/**/*,**/obj/**/*" 
-         /d:sonar.coverage.exclusions="**/$env:SOLUTION_NAME.Tests/**,**/*Tests.cs" 
-         /d:sonar.cs.opencover.reportsPaths="$env:CD\Tests\$env:SOLUTION_NAME.Tests\coverage.opencover.xml"
-    }'
-- ps: 'if ($env:APPVEYOR_PULL_REQUEST_NUMBER) { &
-        dotnet sonarscanner begin 
-         /k:"$env:SONAR_PROJECT" 
-         /o:"$env:SONAR_ORGANIZATION" 
-         /d:sonar.pullrequest.key="$env:APPVEYOR_PULL_REQUEST_NUMBER"
-         /d:sonar.host.url="https://sonarcloud.io" 
-         /d:sonar.login="$env:SONAR_TOKEN" 
-         /v:"$env:APPVEYOR_BUILD_NUMBER" 
-         /d:sonar.exclusions="**/bin/**/*,**/obj/**/*" 
-         /d:sonar.coverage.exclusions="**/$env:SOLUTION_NAME.Tests/**,**/*Tests.cs" 
-         /d:sonar.cs.opencover.reportsPaths="$env:CD\Tests\$env:SOLUTION_NAME.Tests\coverage.opencover.xml"
-    }'
+- ps: $Params =  "/k:`"$env:SONAR_PROJECT`"", "/o:`"$env:SONAR_ORGANIZATION`"", "/v:`"$env:APPVEYOR_BUILD_NUMBER`""
+- ps: $Params += "/d:sonar.host.url=`"https://sonarcloud.io`"", "/d:sonar.login=`"$env:SONAR_TOKEN`""
+- ps: $Params += "/d:sonar.exclusions=`"**/bin/**/*,**/obj/**/*`"", "/d:sonar.coverage.exclusions=`"**/$env:SOLUTION_NAME.Tests/**,**/*Tests.cs`""
+- ps: $Params += "/d:sonar.cs.opencover.reportsPaths=`"$env:CD\Tests\$env:SOLUTION_NAME.Tests\coverage.opencover.xml`""
+- ps: if(-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { $Params += "/d:sonar.branch.name=`"$env:APPVEYOR_REPO_BRANCH`"" }
+- ps: if($env:APPVEYOR_PULL_REQUEST_NUMBER) { $Params += "/d:sonar.pullrequest.key=$env:APPVEYOR_PULL_REQUEST_NUMBER" }
+- ps: Start-process "dotnet" "sonarscanner begin $($Params -join ' ')"
+- codeclimate-test-reporter before-build
 - dotnet build %SOLUTION_NAME%.sln
-- dotnet test .\Tests\%SOLUTION_NAME%.Tests\%SOLUTION_NAME%.Tests.csproj 
- /p:CollectCoverage=true 
- /p:CoverletOutputFormat="opencover"
+- dotnet test .\Tests\%SOLUTION_NAME%.Tests\%SOLUTION_NAME%.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat="cobertura"
+- dotnet test .\Tests\%SOLUTION_NAME%.Tests\%SOLUTION_NAME%.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat="lcov"
+- dotnet test .\Tests\%SOLUTION_NAME%.Tests\%SOLUTION_NAME%.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat="opencover"
+- codeclimate-test-reporter format-coverage -t lcov -o "%CD%\Tests\%SOLUTION_NAME%.Tests\code-climate.json" "%CD%\Tests\%SOLUTION_NAME%.Tests\coverage.info"
+- codeclimate-test-reporter upload-coverage -i "%CD%\Tests\%SOLUTION_NAME%.Tests\code-climate.json" -r %CODECLIMATE_TOKEN%
 - codecov -f "%CD%\Tests\%SOLUTION_NAME%.Tests\coverage.opencover.xml"
-- java 
- -jar 
- ./codacy-test-reporter.jar report 
- -l CSharp 
- -t %CODACY_PROJECT_TOKEN% 
- -r "%CD%\Tests\%SOLUTION_NAME%.Tests\coverage.opencover.xml"
+- java -jar ./codacy-test-reporter.jar report -l CSharp -t %CODACY_PROJECT_TOKEN% -r "%CD%\Tests\%SOLUTION_NAME%.Tests\coverage.opencover.xml"
 - dotnet sonarscanner end /d:sonar.login="%SONAR_TOKEN%"
 
 after_build:
-- xcopy %CD%\Src\%SOLUTION_NAME%\bin\Release\netstandard2.1\*.* %CD%\Build\
+- xcopy %CD%\Src\%SOLUTION_NAME%\bin\Release\netstandard2.0\*.* %CD%\Build\.netstandard2.0\
+- xcopy %CD%\Src\%SOLUTION_NAME%\bin\Release\netstandard2.1\*.* %CD%\Build\.netstandard2.1\
 
 - copy %CD%\Src\%SOLUTION_NAME%\bin\Release\%SOLUTION_NAME%.%APPVEYOR_BUILD_VERSION%.nupkg %SOLUTION_NAME%.%APPVEYOR_BUILD_VERSION%.nupkg
 
@@ -87,6 +72,7 @@ after_build:
 
 - xcopy %CD%\Tests\%SOLUTION_NAME%.Tests\*.xml %CD%\Coverage\
 - xcopy %CD%\Tests\%SOLUTION_NAME%.Tests\*.json %CD%\Coverage\
+- xcopy %CD%\Tests\%SOLUTION_NAME%.Tests\*.info %CD%\Coverage\
 
 - cd %CD%
 
@@ -96,8 +82,10 @@ after_build:
 artifacts:
 - path: $(SOLUTION_NAME).%APPVEYOR_BUILD_VERSION%.zip
   name: ZipFile
+  
 - path: $(SOLUTION_NAME).%APPVEYOR_BUILD_VERSION%.nupkg
   name: Package
+  
 - path: $(SOLUTION_NAME).%APPVEYOR_BUILD_VERSION%.Coverage.zip
   name: Coverage
 
@@ -107,7 +95,7 @@ deploy:
   on:
    branch: main
   artifact: Package
-  
+
 - provider: GitHub
   on:
    branch: main
@@ -115,3 +103,11 @@ deploy:
   auth_token: $(GITHUB_TOKEN)
   force_update: true
   artifact: ZipFile
+
+- provider: GitHub
+  on:
+   branch: main
+  tag: $(appveyor_build_version)
+  auth_token: $(GITHUB_TOKEN)
+  force_update: true
+  artifact: Coverage

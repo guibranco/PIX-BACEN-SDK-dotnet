@@ -1,19 +1,56 @@
 version: 2
+
 updates:
 - package-ecosystem: "docker"
   directory: "/"
   schedule:
     interval: weekly
-  open-pull-requests-limit: 10
-  
-- package-ecosystem: "nuget"
-  directory: "/"
-  schedule:
-    interval: weekly
-  open-pull-requests-limit: 10
-  
+  open-pull-requests-limit: 50
+  assignees: 
+    - "guibranco"
+  reviewers: 
+    - "guibranco"
+  labels:
+    - "docker"
+    - "dependencies"
+
 - package-ecosystem: "github-actions"
   directory: "/"
   schedule:
     interval: weekly
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 50
+  assignees: 
+    - "guibranco"
+  reviewers: 
+    - "guibranco"
+  labels:
+    - "github-actions"
+    - "dependencies"
+
+- package-ecosystem: "nuget"
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 50
+  assignees: 
+    - "guibranco"
+  reviewers: 
+    - "guibranco"
+  labels:
+    - "nuget"
+    - ".NET"
+    - "dependencies"
+  groups:
+    IntegracaoService:
+      patterns:
+        - "IntegracaoService*"
+    VTEX:
+      patterns:
+        - "vtex*"
+    CrispyWaffle:
+      patterns:
+        - "CrispyWaffle*"
+    IdentityModel:
+      patterns:
+        - "*IdentityModel*"
+        

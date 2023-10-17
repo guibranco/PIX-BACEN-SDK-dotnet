@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <ProjectGuid>{75E35E03-D43A-4369-9284-28BB1FEEFDBF}</ProjectGuid>
-    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0;net7.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <LangVersion>latest</LangVersion>
     <Company>Guilherme Branco Stracini</Company>
@@ -10,10 +10,10 @@
     <Copyright>© 2023 Guilherme Branco Stracini. All rights reserved.</Copyright>
     <Description>The PIX (BACEN) contracts for .NET API clients wrappers</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://guibranco.github.io/PIX-BACEN-SDK-DotNet/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/guibranco/PIX-BACEN-SDK-DotNet</RepositoryUrl>
+    <PackageProjectUrl>https://guibranco.github.io/PIX-BACEN-SDK-dotnet/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/guibranco/PIX-BACEN-SDK-dotnet</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
-    <PackageTags>pix bacen </PackageTags>
+    <PackageTags>pix bacen spi iso20022 api bancos brasileiros</PackageTags>
     <PackageIcon>packageLogo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <Version>1.0.0</Version>

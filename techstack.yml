@@ -1,7 +1,8 @@
 repo_name: guibranco/PIX-BACEN-SDK-dotnet
-report_id: 2595f7b96a87f61e7a8ea44f3abfe5ca
+report_id: 845bdbb878957b985eaebd4661faa6d0
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T09:37:42+00:00'
+timestamp: '2024-01-11T12:23:17+00:00'
 requested_by: dependabot[bot]
 provider: github
 branch: main
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/guibranco/PIX-BACEN-SDK-dotnet
   detection_source: Repo Metadata
 - name: ".NET"
   description: A free, cross-platform, open source developer platform for building
@@ -27,6 +29,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/guibranco/PIX-BACEN-SDK-dotnet/blob/main/Tests/PixBacen.Tests/PIXBacen.Tests.csproj
   detection_source: Tests/PixBacen.Tests/PIXBacen.Tests.csproj
   last_updated_by: dependabot[bot]
   last_updated_on: 2023-11-15 16:10:51.000000000 Z
@@ -68,6 +71,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/guibranco/PIX-BACEN-SDK-dotnet
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -77,6 +81,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/guibranco/PIX-BACEN-SDK-dotnet/blob/main/.github/workflows/deep-source.yml
   detection_source: ".github/workflows/deep-source.yml"
   last_updated_by: dependabot[bot]
   last_updated_on: 2023-12-11 16:39:15.000000000 Z
@@ -88,6 +93,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/1628/1434934.png
+  detection_source_url: https://github.com/guibranco/PIX-BACEN-SDK-dotnet/blob/main/Tests/PixBacen.Tests/PIXBacen.Tests.csproj
   detection_source: Tests/PixBacen.Tests/PIXBacen.Tests.csproj
   last_updated_by: Guilherme Branco Stracini
   last_updated_on: 2021-06-22 01:36:13.000000000 Z
@@ -99,6 +105,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/guibranco/PIX-BACEN-SDK-dotnet/blob/main/Tests/PixBacen.Tests/PIXBacen.Tests.csproj
   detection_source: Tests/PixBacen.Tests/PIXBacen.Tests.csproj
   last_updated_by: Guilherme Branco Stracini
   last_updated_on: 2021-06-22 01:36:13.000000000 Z
@@ -111,13 +118,14 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/guibranco/PIX-BACEN-SDK-dotnet/blob/main/PixBacen.sln
   detection_source: PixBacen.sln
   last_updated_by: Guilherme Branco Stracini
   last_updated_on: 2020-10-23 14:26:31.000000000 Z
 - name: xUnit
   description: An open source, community-focused unit testing tool
   website_url: http://xunit.github.io/
-  version: 2.6.3
+  version: 2.6.5
   open_source: true
   hosted_saas: false
   category: Build, Test, Deploy
@@ -173,7 +181,7 @@ tools:
 - name: xunit.runner.visualstudio
   description: Visual Studio 2012+ Test Explorer runner for the xUnit.net framework
   package_url: https://www.nuget.org/xunit.runner.visualstudio
-  version: 2.5.5
+  version: 2.5.6
   license: Other
   open_source: true
   hosted_saas: false
@@ -183,4 +191,4 @@ tools:
   detection_source_url: https://github.com/guibranco/PIX-BACEN-SDK-dotnet/blob/main/Tests/PixBacen.Tests/PIXBacen.Tests.csproj
   detection_source: Tests/PixBacen.Tests/PIXBacen.Tests.csproj
   last_updated_by: dependabot[bot]
-  last_updated_on: 2023-12-11 09:46:26.000000000 Z
+  last_updated_on: 2024-01-08 06:29:56.000000000 Z

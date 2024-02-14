@@ -27,7 +27,7 @@ init:
 before_build:
 - ps: $env:SOLUTION_NAME = $([io.path]::GetFileNameWithoutExtension($(Get-ChildItem -Path .\* -Include *.sln)))
 - ps: $env:SONAR_PROJECT = "$env:APPVEYOR_REPO_NAME" -replace "/","_"
-- ps: $env:SONAR_ORGANIZATION = "$env:APPVEYOR_REPO_NAME" -replace "/.*$","-github"
+- ps: $env:SONAR_ORGANIZATION = "$env:APPVEYOR_REPO_NAME" -replace "/.*$",""
 - cmd: nuget restore
 - cmd: choco install opencover.portable
 - cmd: choco install codecov

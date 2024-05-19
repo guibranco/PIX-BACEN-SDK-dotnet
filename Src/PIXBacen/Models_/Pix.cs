@@ -1,4 +1,4 @@
-﻿namespace PIXBacen
+namespace PIXBacen
 {
     using System;
 
@@ -13,6 +13,5 @@
         public string InfoPagador { get; set; }
 
         public Devolucao[] Devolucoes { get; set; }
-
     }
 }

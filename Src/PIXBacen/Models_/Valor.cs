@@ -1,4 +1,4 @@
-﻿namespace PIXBacen
+namespace PIXBacen
 {
     public class Valor
     {
@@ -11,6 +11,5 @@
         public Desconto Desconto { get; set; }
 
         public decimal Final { get; set; }
-
     }
 }

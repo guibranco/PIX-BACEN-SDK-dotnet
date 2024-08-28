@@ -162,7 +162,5 @@
         {
             throw new NotImplementedException();
         }
-
-        #endregion
     }
 }

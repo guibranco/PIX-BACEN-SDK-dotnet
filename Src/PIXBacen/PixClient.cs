@@ -6,7 +6,6 @@
 
     public class PixClient : IPixClient
     {
-
         /// <summary>
         /// Asynchronously retrieves the charge payload using the provided access token.
         /// </summary>

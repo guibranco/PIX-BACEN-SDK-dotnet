@@ -8,7 +8,6 @@ namespace PIXBacen.Tests
 
     public class UnitTest1
     {
-
         /// <summary>
         /// Tests the GetChargePayloadAsync method of the PixClient class.
         /// </summary>

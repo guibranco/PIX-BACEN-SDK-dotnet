@@ -7,18 +7,9 @@ on:
 jobs:
   linter-check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
     steps:
-
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-
-      - name: Dotnet restore
-        run: dotnet tool restore
-
-      - name: CSharpier format check
-        run: |
-          dotnet csharpier . --check
-          echo "run 'dotnet build' to fix the formatting of the code automatically"
+      - name: CSharpier Linter
+        uses: guibranco/github-csharpier-linter-action@v1.0.6

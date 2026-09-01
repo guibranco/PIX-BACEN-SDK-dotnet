@@ -1,4 +1,4 @@
-version: 1.1.{build}
+version: 1.2.{build}
 skip_tags: true
 image: Visual Studio 2022
 configuration: Release
@@ -98,7 +98,8 @@ deploy:
   on:
    branch: main
   tag: v$(appveyor_build_version)
-  description: 'Release of $(SOLUTION_NAME) - v$(appveyor_build_version)'
+  release: Release v$(appveyor_build_version)
+  description: "Release of $(SOLUTION_NAME) - v$(appveyor_build_version)"
   auth_token: $(GITHUB_TOKEN)
   force_update: true
   artifact: ZipFile, Package, Coverage
